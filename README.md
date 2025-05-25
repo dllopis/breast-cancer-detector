@@ -12,44 +12,49 @@ Dataset on kaggle: https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset
 
 ## 📁 Project Structure
 
-breast_cancer_detection/
-├── main.py # Main script to run the models
-├── breast-cancer.csv # Input dataset
-├── requirements.txt # Project dependencies
-├── models/
-│ ├── decision_tree.py
-│ ├── random_forest.py
-│ ├── svm_rbf.py
-│ └── knn.py
-└── utils/
-├── evaluation.py
-└── io_helpers.py
+breast_cancer_detection/  
+├── main.py # Main script to run the models  
+├── breast-cancer.csv # Input dataset  
+├── requirements.txt # Project dependencies  
+├── models/  
+│ ├── decision_tree.py  
+│ ├── random_forest.py  
+│ ├── svm_rbf.py  
+│ └── knn.py  
+└── utils/  
+├── evaluation.py  
+└── io_helpers.py  
 
 
 ---
 
-🧠 Models Implemented
-Model	                Description
-Decision Tree 	        A simple decision tree classifier with full visualization
-Random Forest	        Manual ensemble of decision trees with majority voting
-SVM (RBF Kernel)	    Support Vector Classifier using an RBF kernel with 2D features
-K-Nearest Neighbors	    KNN with both Euclidean and Manhattan distances
+# 🧠 Models Implemented    
+| Model                | Description                                                           | 
+|:------------------------|:------------------------------------------------------------------:|
+| Decision Tree           |    A simple decision tree classifier with full visualization       |
+| Random Forest           |     Manual ensemble of decision trees with majority voting         |
+| SVM (RBF Kernel)        |    Support Vector Classifier using an RBF kernel with 2D features  |
+| K-Nearest Neighbors     |     KNN with both Euclidean and Manhattan distances                |
 
-📊 Metrics Evaluated
-Accuracy
-Sensitivity (Recall)
-Specificity
-Confusion Matrix
 
-🛠 Requirements
-Python 3.8+
-pandas
-scikit-learn
-matplotlib
-scipy
-numpy
+# 📊 Metrics Evaluated
 
-📌 Notes
-SVM visualization is performed on two selected features: radius_mean and texture_mean.
-Confusion matrices are displayed for each model.
-Models are trained on a 80/20 train-test split with stratification.
+- Accuracy  
+- Sensitivity (Recall)  
+- Specificity  
+- Confusion Matrix  
+- Decision Boundaries (only for svm-rbf)  
+
+## 🛠 Requirements  
+
+- Python 3.8+  
+- pandas  
+- scikit-learn  
+- matplotlib  
+- scipy  
+- numpy  
+
+## 📌 Notes  
+- SVM visualization is performed on two selected features: radius_mean and texture_mean.  
+- Confusion matrices are displayed for each model.  
+- Models are trained on a 80/20 train-test split with stratification.  
